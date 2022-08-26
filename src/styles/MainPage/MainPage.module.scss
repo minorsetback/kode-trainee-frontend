@@ -1,0 +1,203 @@
+.wrapper {
+    width: 1280px;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Inter';
+}
+
+.header {
+    margin-left: 10px;
+    margin-bottom: 15px;
+
+}
+
+.header>h1 {
+    margin: 0 0 15px 0;
+}
+
+.search {
+    display: flex;
+    background: #F7F7F8;
+    margin: 0;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.searchInput {
+    border: none;
+    background: #F7F7F8;
+    width: 100%;
+    height: 20px;
+    margin: 0 10px 0 10px;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #c3c3c6;
+}
+
+.searchInput::placeholder {
+    color: #c3c3c6;
+}
+
+.search:focus {
+    border: none;
+}
+
+.search>img:last-child {
+    cursor: pointer;
+}
+
+.sortUsers {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #97979B;
+    column-gap: 25px;
+    margin-top: 15px;
+    border-bottom: 1px solid #c3c3c6;
+}
+
+.sortUsers>p {
+    cursor: pointer;
+    margin: 0;
+    padding: 0 10px 10px 10px;
+}
+
+.sortUsers>p:first-child {
+    color: black;
+}
+
+.userWrapper {
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+.userNameWrapper {
+    margin-left: 20px;
+    padding-top: 22px;
+}
+
+.userName,
+.userPosition {
+    margin: 0;
+    justify-content: center;
+}
+
+.imageWrapper {
+    width: 72px;
+    height: 72px;
+}
+
+.userTag {
+    text-transform: lowercase;
+    color: #c3c3c6;
+    margin-left: 5px;
+}
+
+.userPosition {
+    margin-top: 5px;
+    color: #c3c3c6;
+}
+
+.errorWrapper {
+    width: 400px;
+    display: block;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.errorImage {
+    display: block;
+    margin: 0 auto;
+}
+
+.errorTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #050510;
+}
+
+.errorSubTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #97979B;
+}
+
+.errorReload {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #6534FF;
+    text-decoration: none;
+}
+
+.modalWrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(5, 5, 16, 0.16);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: show .25s ease forwards;
+    z-index: 999;
+    background: #fafafa;
+    padding: 1rem;
+    width: 373px;
+    height: 192px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.modalTitle {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.modal>button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: #F7F7F8;
+    cursor: pointer;
+    color: #C3C3C6;
+}
+
+.modal__close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+@keyframes show {
+    to {
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
