@@ -1,0 +1,41 @@
+.errorWrapper {
+    width: 400px;
+    display: block;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.errorImage {
+    display: block;
+    margin: 0 auto;
+}
+
+.errorTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #050510;
+}
+
+.errorSubTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #97979B;
+}
+
+.errorReload {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #6534FF;
+    text-decoration: none;
+}

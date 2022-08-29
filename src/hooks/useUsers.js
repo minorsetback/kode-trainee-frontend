@@ -10,11 +10,6 @@ export const useUsers = () => {
         getUsers()
     }, [])
 
-    useEffect(() => {
-        setUsers(users)
-        console.log(users)
-    }, [users])
-
     const getUsers = async () => {
         try {
             setIsFetching(true)
@@ -34,17 +29,16 @@ export const useUsers = () => {
 
     const searchUsers = (users, searchValue) => {
         if (users) {
-            const search = users.filter(user => {
-                return user.firstName.toLowerCase().includes(searchValue.toLowerCase()) ||
-                    user.lastName.toLowerCase().includes(searchValue.toLowerCase()) ||
-                    user.userTag.toLowerCase().includes(searchValue.toLowerCase())
-            }
-            )
+            const search = users?.filter(user => {
+                return user?.firstName?.toLowerCase().includes(searchValue.toLowerCase()) ||
+                    user?.lastName?.toLowerCase().includes(searchValue.toLowerCase()) ||
+                    user?.userTag?.toLowerCase().includes(searchValue.toLowerCase())
+            })
             return search
         }
     }
 
-    const sortByDateOrAlphabet = (type) => {
+    const sortByDateOrAlphabet = (users, type) => {
         if (type === 'date') {
             users?.sort(function (a, b) {
                 let dateA = new Date(a.birthday), dateB = new Date(b.birthday)
@@ -62,10 +56,10 @@ export const useUsers = () => {
         }
     }
 
-    const sortDepartment = (department) => {
-        console.log(users)
+    const sortDepartment = (department, sort) => {
         if (users) {
-            const usersByDepartment = users.filter(user => user.department === department)
+            sortByDateOrAlphabet(users, sort)
+            const usersByDepartment = users?.filter(user => user.department === department)
             return usersByDepartment
         }
     }

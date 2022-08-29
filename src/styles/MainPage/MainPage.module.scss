@@ -75,7 +75,7 @@
 
 .userWrapper {
     display: flex;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 15px;
 }
 
 .userNameWrapper {
@@ -105,48 +105,6 @@
     color: #c3c3c6;
 }
 
-.errorWrapper {
-    width: 400px;
-    display: block;
-    margin: 150px auto;
-    text-align: center;
-}
-
-.errorImage {
-    display: block;
-    margin: 0 auto;
-}
-
-.errorTitle {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    color: #050510;
-}
-
-.errorSubTitle {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #97979B;
-}
-
-.errorReload {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #6534FF;
-    text-decoration: none;
-}
-
 .modalWrapper {
     width: 100%;
     height: 100%;
@@ -166,7 +124,7 @@
     background: #fafafa;
     padding: 1rem;
     width: 373px;
-    height: 192px;
+    height: 162px;
     border-radius: 20px;
     justify-content: center;
 }
@@ -188,7 +146,7 @@
     color: #C3C3C6;
 }
 
-.modal__close {
+.modalClose {
     position: absolute;
     top: 4px;
     right: 4px;
@@ -199,5 +157,54 @@
 @keyframes show {
     to {
         transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+.modalInput {
+    appearance: none;
+    border: 2px solid #ecedef;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px;
+    margin: 14px 0 0 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6534FF;
+
+    &:checked {
+        border: 6px solid #6534FF;
+    }
+}
+
+.modalInputWrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: flex-end
+}
+
+.modalLabel {
+    margin-left: 15px;
+}
+
+@media screen and (min-width:720px) and (max-width:1280px) {
+    .wrapper {
+        width: 720px;
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .wrapper {
+        width: 320px;
+        display: block;
+    }
+
+    .sortUsers {
+        overflow-y: auto;
+    }
+
+    .sortUsers::-webkit-scrollbar {
+        display: none;
     }
 }

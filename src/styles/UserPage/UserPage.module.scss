@@ -1,0 +1,77 @@
+.userHeader {
+    width: 100%;
+    height: 330px;
+    background: #F7F7F8;
+    padding: 1px;
+}
+
+.userImage {
+    display: block;
+    margin: 72px auto;
+}
+
+.userName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #050510;
+}
+
+.userTag {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-transform: lowercase;
+    color: #c3c3c6;
+    margin-left: 5px;
+}
+
+.userPosition {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 5px;
+    color: #55555C;
+}
+
+.userAge {
+    margin-right: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    float: right;
+    color: #97979B;
+}
+
+.userBirthday,
+.userPhone {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 15px;
+    color: #050510;
+}
+
+.userDateBlock,
+.usePhoneBlock {
+    display: inline-flex;
+    width: 100%;
+}
+
+.userStarImage,
+.userPhoneImage {
+    margin-left: 25px;
+}
